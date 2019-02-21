@@ -24,5 +24,6 @@ namespace Pretty_Hair___Kvalitet_projekt
 		{
 			InitializeComponent();
 		}
+
 	}
 }
