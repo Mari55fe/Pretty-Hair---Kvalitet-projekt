@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Database_Controller.cs" />
     <Compile Include="FindCustomer.xaml.cs">
       <DependentUpon>FindCustomer.xaml</DependentUpon>
     </Compile>
