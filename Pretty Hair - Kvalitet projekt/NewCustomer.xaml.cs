@@ -23,5 +23,10 @@ namespace Pretty_Hair___Kvalitet_projekt
 		{
 			InitializeComponent();
 		}
-	}
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            //op
+        }
+    }
 }
