@@ -17,11 +17,18 @@ namespace Pretty_Hair___Kvalitet_projekt
 	/// <summary>
 	/// Interaction logic for Window1.xaml
 	/// </summary>
-	public partial class Window1 : Window
+	public partial class NewOrder : Window
 	{
-		public Window1()
+		public NewOrder()
 		{
 			InitializeComponent();
 		}
-	}
+
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow main = new MainWindow();
+            main.Show();
+            this.Close();
+        }
+    }
 }

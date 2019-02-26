@@ -55,7 +55,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Database_Controller.cs" />
+    <Compile Include="Controller.cs" />
+    <Compile Include="Customer.cs" />
     <Compile Include="FindCustomer.xaml.cs">
       <DependentUpon>FindCustomer.xaml</DependentUpon>
     </Compile>
@@ -65,6 +66,9 @@
     <Compile Include="NewOrder.xaml.cs">
       <DependentUpon>NewOrder.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Order.cs" />
+    <Compile Include="Product.cs" />
+    <Compile Include="SaleOrderLine.cs" />
     <Page Include="FindCustomer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
