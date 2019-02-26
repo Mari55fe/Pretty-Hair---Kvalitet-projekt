@@ -30,5 +30,10 @@ namespace Pretty_Hair___Kvalitet_projekt
             main.Show();
             this.Close();
         }
+
+        private void Opret_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
