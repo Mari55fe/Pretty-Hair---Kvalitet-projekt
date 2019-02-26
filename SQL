@@ -8,6 +8,26 @@ CREATE TABLE KUNDE_INFO (
 	CONSTRAINT			KUNDE_INFO_PK		PRIMARY KEY(KundeID) 
 	);
 	
+CREATE TABLE ORDRE_INFO (
+	Kundenavn			NVarChar(50)		NOT NULL,
+	OrdreID				Int			NOT NULL,
+	Bestillingsdato			DateTime2		NOT NULL,
+	Leveringsdato			Date			NOT NULL,
+	ProduktID			Int			NOT NULL,
+	CONSTRAINT			ORDRE_INFO_PK		PRIMARY KEY(OrdreID), 
+	CONSTRAINT			PRODUKT_INFO_FK		FOREIGN KEY(ProduktID)
+					REFERENCES PRODUKT_INFO (ProduktID)
+					ON UPDATE CASCADE
+					ON DELETE NO ACTION
+	);
+	
+CREATE TABLE SALG_INFO (
+	ProduktID			Int			NOT NULL,
+	Antal				Int			NOT NULL,
+	Pris				Float			NOT NULL,
+	CONSTRAINT			SALG_INFO_PK		PRIMARY KEY(ProduktID) 
+	);
+	
 CREATE PROCEDURE InsertKundeInfo (
 	@KundeID			Int,
 	@Navn				NVarChar(50),	
