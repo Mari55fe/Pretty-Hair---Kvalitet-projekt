@@ -8,7 +8,8 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Button Name="FindCustomer" Content="Find Kunde" HorizontalAlignment="Left" Height="45" Margin="61,272,0,0" VerticalAlignment="Top" Width="138" Click="FindCustomer_Click"/>
-        <Button Name="NewOrder" Content="Opret Order" HorizontalAlignment="Left" Height="45" Margin="61,83,0,0" VerticalAlignment="Top" Width="138" Click="NewOrder_Click"/>
-        <Button Name="NewCustomer" Content="Opret Kunde" HorizontalAlignment="Left" Height="45" Margin="61,178,0,0" VerticalAlignment="Top" Width="138" Click="NewCustomer_Click"/>
+        <Button Name="NewOrder" Content="Opret Order" HorizontalAlignment="Left" Height="45" Margin="331,272,0,0" VerticalAlignment="Top" Width="138" Click="NewOrder_Click"/>
+        <Button Name="NewCustomer" Content="Opret Kunde" HorizontalAlignment="Left" Height="45" Margin="588,272,0,0" VerticalAlignment="Top" Width="138" Click="NewCustomer_Click"/>
+        <Label FontSize="50" FontStyle="Italic" FontFamily="Century Gothic" Content="Pretty Hair" HorizontalAlignment="Left" Height="78" Margin="267,83,0,0" VerticalAlignment="Top" Width="272"/>
     </Grid>
 </Window>
