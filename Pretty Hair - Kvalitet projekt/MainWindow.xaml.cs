@@ -25,6 +25,24 @@ namespace Pretty_Hair___Kvalitet_projekt
 			InitializeComponent();
 		}
 
+		private void NewOrder_Click(object sender, RoutedEventArgs e)
+		{
+			NewOrder newOrder = new NewOrder();
+			newOrder.Show();
+			this.Close();
 		
+		}
+
+		private void NewCustomer_Click(object sender, RoutedEventArgs e)
+		{
+			NewCustomer newCustomer = new NewCustomer();
+			newCustomer.Show();
+			this.Close();
+		}
+
+		private void FindCustomer_Click(object sender, RoutedEventArgs e)
+		{
+
+		}
 	}
 }
