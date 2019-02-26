@@ -40,7 +40,7 @@ namespace Pretty_Hair___Kvalitet_projekt
 
                 catch (SqlException e)
                 {
-                    Console.WriteLine("Hovsa " + e.Message);
+                    Console.WriteLine("Hovsa: " + e.Message);
                 }
             }
         }
@@ -74,7 +74,7 @@ namespace Pretty_Hair___Kvalitet_projekt
 
                 catch (SqlException e)
                 {
-                    Console.WriteLine("Hovsa " + e.Message);
+                    Console.WriteLine("Hovsa: " + e.Message);
                 }
             }
         }
