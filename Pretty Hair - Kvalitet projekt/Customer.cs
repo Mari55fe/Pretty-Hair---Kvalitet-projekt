@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace Pretty_Hair___Kvalitet_projekt
 {
-    class Customer
+    public class Customer
     {
-        //properties
+        public string KundeID { get; set; }
+        public string Navn { get; set; }
+        public string Adresse { get; set; }
+        public string PostNr { get; set; }
+        public string Bydel { get; set; }
+        public string Telefonnummer { get; set; }
     }
 }

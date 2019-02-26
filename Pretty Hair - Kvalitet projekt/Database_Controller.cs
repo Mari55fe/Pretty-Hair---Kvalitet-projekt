@@ -13,7 +13,7 @@ namespace Pretty_Hair___Kvalitet_projekt
         private static string connectionString =
        "Server = ealSQL1.eal.local; Database = A_DB27_2018; User Id = A_STUDENT27; Password = A_OPENDB27;";
 
-        public void InsertCustomer()
+        public void InsertCustomer(Customer customer)
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
