@@ -7,9 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox Name="NewOrder" HorizontalAlignment="Left" Height="40" Margin="314,154,0,0" TextWrapping="Wrap" Text="Opret Order" VerticalAlignment="Top" Width="169"/>
-        <TextBox Name="FindCustomer" HorizontalAlignment="Left" Height="40" Margin="314,199,0,0" TextWrapping="Wrap" Text="Find Kunde" VerticalAlignment="Top" Width="169"/>
-        <TextBox Name="NewCustomer"  HorizontalAlignment="Left" Height="40" Margin="314,244,0,0" TextWrapping="Wrap" Text="Ny Kunde" VerticalAlignment="Top" Width="169"/>
-
+        <Button Name="FindCustomer" Content="Find Kunde" HorizontalAlignment="Left" Height="45" Margin="61,272,0,0" VerticalAlignment="Top" Width="138"/>
+        <Button Name="NewOrder" Content="Opret Order" HorizontalAlignment="Left" Height="45" Margin="61,83,0,0" VerticalAlignment="Top" Width="138"/>
+        <Button Name="NewCustomer" Content="Opret Kunde" HorizontalAlignment="Left" Height="45" Margin="61,178,0,0" VerticalAlignment="Top" Width="138"/>
     </Grid>
 </Window>
