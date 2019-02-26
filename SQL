@@ -28,6 +28,15 @@ CREATE TABLE SALG_INFO (
 	CONSTRAINT			SALG_INFO_PK		PRIMARY KEY(ProduktID) 
 	);
 	
+CREATE TABLE PRODUKT_INFO (
+	ProduktID			Int			NOT NULL,
+	ProduktNavn			NVarChar(50)		NOT NULL,
+	Beskrivelse			NVarChar(500)		NOT NULL,
+	Pris				Float			NOT NULL,
+	MinPåLager			Int			NOT NULL,
+	CONSTRAINT			PRODUKT_INFO_PK		PRIMARY KEY(ProduktID) 
+	);	
+	
 CREATE PROCEDURE InsertKundeInfo (
 	@KundeID			Int,
 	@Navn				NVarChar(50),	
