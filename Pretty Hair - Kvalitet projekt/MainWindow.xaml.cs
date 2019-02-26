@@ -42,7 +42,9 @@ namespace Pretty_Hair___Kvalitet_projekt
 
 		private void FindCustomer_Click(object sender, RoutedEventArgs e)
 		{
-
+			FindCustomer findCustomer = new FindCustomer();
+			findCustomer.Show();
+			this.Close();
 		}
 	}
 }
