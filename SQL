@@ -1,0 +1,44 @@
+CREATE TABLE KUNDE_INFO (
+	KundeID				Int					NOT NULL,
+	Navn				NVarChar(50)		NOT NULL,
+	Adresse				NVarChar(50)		NOT NULL,
+	PostNr				NVarChar(10)		NOT NULL,
+	Bydel				NVarChar(50)		NOT NULL,
+	Telefonnummer		NVarChar(25)		NOT NULL,
+	CONSTRAINT			KUNDE_INFO_PK		PRIMARY KEY(KundeID) 
+	);
+	
+CREATE PROCEDURE InsertKundeInfo (
+	@KundeID					Int,
+	@Navn						NVarChar(50),	
+	@Adresse					NVarChar(50),
+	@PostNr						NVarChar(10),
+	@Bydel						NVarChar(50),
+	@Telefonnummer				NVarChar(25)
+	)
+AS
+BEGIN
+INSERT INTO KUNDE_INFO (
+	KundeID,
+	Navn,
+	Adresse,
+	PostNr,
+	Bydel,
+	Telefonnummer
+	)
+VALUES (
+	@KundeID,		
+	@Navn,			
+	@Adresse,			
+	@PostNr,			
+	@Bydel,	
+	@Telefonnummer	
+	)
+END
+
+CREATE PROCEDURE GetKundeInfo
+AS
+BEGIN
+SELECT KundeID, Navn, Adresse, PostNr, Bydel, Telefonnummer
+FROM KUNDE_INFO
+END
