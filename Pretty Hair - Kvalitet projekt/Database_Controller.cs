@@ -24,16 +24,11 @@ namespace Pretty_Hair___Kvalitet_projekt
                     SqlCommand cmd1 = new SqlCommand("InsertKundeInfo", conn);
                     cmd1.CommandType = CommandType.StoredProcedure;
 
-                    Console.WriteLine("Indtast kundenavn");
-                    cmd1.Parameters.Add(new SqlParameter("@Navn", Console.ReadLine()));
-                    Console.WriteLine("Indtast adresse");
-                    cmd1.Parameters.Add(new SqlParameter("@Adresse", Console.ReadLine()));
-                    Console.WriteLine("Indtast postnummer");
-                    cmd1.Parameters.Add(new SqlParameter("@PostNr", Console.ReadLine()));
-                    Console.WriteLine("Indtast by");
-                    cmd1.Parameters.Add(new SqlParameter("@Bydel", Console.ReadLine()));
-                    Console.WriteLine("Indtast telefonnummer");
-                    cmd1.Parameters.Add(new SqlParameter("@Telefonnummer", Console.ReadLine()));
+                    cmd1.Parameters.Add(new SqlParameter("@Navn", customer.Name));
+                    cmd1.Parameters.Add(new SqlParameter("@Adresse", customer.Address));
+                    cmd1.Parameters.Add(new SqlParameter("@PostNr", customer.Zip));
+                    cmd1.Parameters.Add(new SqlParameter("@Bydel", customer.Town));
+                    cmd1.Parameters.Add(new SqlParameter("@Telefonnummer", customer.PhoneNum));
 
                     cmd1.ExecuteNonQuery();
                 }

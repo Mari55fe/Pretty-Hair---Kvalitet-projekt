@@ -8,11 +8,10 @@ namespace Pretty_Hair___Kvalitet_projekt
 {
     public class Customer
     {
-        public string KundeID { get; set; }
-        public string Navn { get; set; }
-        public string Adresse { get; set; }
-        public string PostNr { get; set; }
-        public string Bydel { get; set; }
-        public string Telefonnummer { get; set; }
+        public string Name { get; set; }
+        public string Address { get; set; }
+        public string Zip { get; set; } //int?
+        public string Town { get; set; }
+        public string PhoneNum { get; set; } //int?
     }
 }

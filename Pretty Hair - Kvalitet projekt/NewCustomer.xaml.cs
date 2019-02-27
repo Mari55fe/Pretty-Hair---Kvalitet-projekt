@@ -24,13 +24,14 @@ namespace Pretty_Hair___Kvalitet_projekt
 			InitializeComponent();
 		}
 
-        private void New_Customer(object sender, RoutedEventArgs e)
+        private void NewCustomerButton_Click(object sender, RoutedEventArgs e)
         {
             Controller controller = new Controller();
-            controller.InsertCustomer();
+            controller.InsertCustomer(NameTB.Text, AddressTB.Text, ZipTB.Text, TownTB.Text, PhoneTB.Text);
+            MessageBox.Show("Kunde oprettet!");
         }
 
-        private void Back(object sender, RoutedEventArgs e)
+        private void BackButton_Click(object sender, RoutedEventArgs e)
         {
             MainWindow main = new MainWindow();
             main.Show();

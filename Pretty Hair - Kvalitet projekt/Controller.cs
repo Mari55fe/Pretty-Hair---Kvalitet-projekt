@@ -10,9 +10,9 @@ namespace Pretty_Hair___Kvalitet_projekt
     {
         Database_Controller DBC = new Database_Controller();
 
-        public void InsertCustomer()
+        public void InsertCustomer(string name, string address, string zip, string town, string phoneNum)
         {
-            Customer customer = new Customer { };
+            Customer customer = new Customer { Name = name, Address = address, Zip = zip, Town = town, PhoneNum = phoneNum};
             DBC.InsertCustomer(customer);
         }
         public void ShowCustomer()

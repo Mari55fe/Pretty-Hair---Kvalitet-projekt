@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="NewCustomer" Height="450" Width="800">
     <Grid>
-        <Button Content="Opret Kunde" HorizontalAlignment="Left" Margin="428,290,0,0" VerticalAlignment="Top" Width="120" Height="30"/>
+        <Button Name="NewCustomerButton" Content="Opret Kunde" HorizontalAlignment="Left" Margin="428,290,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="NewCustomerButton_Click"/>
         <Label Content="Navn" HorizontalAlignment="Left" Margin="217,43,0,0" VerticalAlignment="Top" FontSize="16"/>
         <TextBox Name="NameTB" HorizontalAlignment="Left" Height="23" Margin="428,52,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Label Content="Addresse" HorizontalAlignment="Left" Margin="217,80,0,0" VerticalAlignment="Top" FontSize="16"/>
@@ -16,8 +16,8 @@
         <Label Content="Telefon" HorizontalAlignment="Left" Margin="217,188,0,0" VerticalAlignment="Top" FontSize="16"/>
         <TextBox Name="AddressTB" HorizontalAlignment="Left" Height="23" Margin="428,88,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox Name="ZipTB" HorizontalAlignment="Left" Height="23" Margin="428,124,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="CityTB" HorizontalAlignment="Left" Height="23" Margin="428,160,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="TownTB" HorizontalAlignment="Left" Height="23" Margin="428,160,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox Name="PhoneTB" HorizontalAlignment="Left" Height="23" Margin="428,196,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Tilbage" HorizontalAlignment="Left" Margin="217,290,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="Back"/>
+        <Button Name="BackButton" Content="Tilbage" HorizontalAlignment="Left" Margin="217,290,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="BackButton_Click"/>
     </Grid>
 </Window>
