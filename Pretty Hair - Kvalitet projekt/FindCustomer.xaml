@@ -7,7 +7,9 @@
         mc:Ignorable="d"
         Title="FindCustomer" Height="450" Width="800">
     <Grid>
-        <TextBox HorizontalAlignment="Left" Height="50" Margin="202,37,0,0" TextWrapping="Wrap" Text="Find Kunde" VerticalAlignment="Top" Width="340"/>
+        <TextBox HorizontalAlignment="Left" Height="50" Margin="10,121,0,0" TextWrapping="Wrap" Text="Find Kunde" VerticalAlignment="Top" Width="195"/>
+        <Button x:Name="BackButton" Content="Tilbage" HorizontalAlignment="Left" Margin="77,282,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="BackButton_Click"/>
+        <DataGrid HorizontalAlignment="Left" Height="377" Margin="289,20,0,0" VerticalAlignment="Top" Width="483" RenderTransformOrigin="0.49,0.502" SelectionChanged="DataGrid_SelectionChanged"/>
 
     </Grid>
 </Window>

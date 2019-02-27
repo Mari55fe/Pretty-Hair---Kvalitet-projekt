@@ -23,5 +23,18 @@ namespace Pretty_Hair___Kvalitet_projekt
 		{
 			InitializeComponent();
 		}
-	}
+
+        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Controller controller = new Controller();
+            controller.ShowCustomer();
+        }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow main = new MainWindow();
+            main.Show();
+            this.Close();
+        }
+    }
 }
