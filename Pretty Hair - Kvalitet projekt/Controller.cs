@@ -19,5 +19,10 @@ namespace Pretty_Hair___Kvalitet_projekt
         {
             DBC.ShowCustomer();
         }
+        public void InsertOrder(string ordreID, string navn, string bestillingsdato, string leveringsdato, object checkbox)
+        {
+            Order order = new Order { OrdreID = ordreID, Navn = navn, Bestillingsdato = bestillingsdato, Leveringsdato = leveringsdato, Checkbox = checkbox };
+            DBC.InsertOrder(order);
+        }
     }
 }

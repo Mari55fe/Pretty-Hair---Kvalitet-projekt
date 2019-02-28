@@ -13,5 +13,6 @@ namespace Pretty_Hair___Kvalitet_projekt
         public string Bestillingsdato { get; set; }
         public string Leveringsdato { get; set; }
         public string ProduktID { get; set; }
+        public object Checkbox { get; set; }
     }
 }

@@ -7,14 +7,18 @@
         mc:Ignorable="d"
         Title="Window1" Height="450" Width="800">
     <Grid>
-        <Label Content="Opret ordre" HorizontalAlignment="Left" Margin="340,42,0,0" VerticalAlignment="Top" Height="34" Width="226" FontSize="20"/>
-        <Button Name="Back" Content="Tilbage" HorizontalAlignment="Left" Margin="159,311,0,0" VerticalAlignment="Top" Width="133" Height="31" Click="Back_Click"/>
-        <CheckBox Name="checkbox" Content="Hentet" HorizontalAlignment="Left" Margin="371,238,0,0" VerticalAlignment="Top"/>
-        <DatePicker Name="Bestillingsdato" HorizontalAlignment="Left" Margin="348,109,0,0" VerticalAlignment="Top"/>
-        <DatePicker Name="Leveringsdato" HorizontalAlignment="Left" Margin="348,169,0,0" VerticalAlignment="Top"/>
-        <Label Content="Bestillingsdato" HorizontalAlignment="Left" Margin="242,109,0,0" VerticalAlignment="Top"/>
-        <Label Content="Leveringsdato" HorizontalAlignment="Left" Margin="242,169,0,0" VerticalAlignment="Top"/>
-        <Button Name="opret" Content="Opret" HorizontalAlignment="Left" Margin="491,311,0,0" VerticalAlignment="Top" Width="133" Height="31" Click="Opret_Click"/>
+        <Label Content="Opret ordre" HorizontalAlignment="Left" Margin="334,27,0,0" VerticalAlignment="Top" Height="34" Width="226" FontSize="20"/>
+        <Button Name="Back" Content="Tilbage" HorizontalAlignment="Left" Margin="160,351,0,0" VerticalAlignment="Top" Width="133" Height="31" Click="Back_Click"/>
+        <CheckBox Name="checkboxTB" Content="Hentet" HorizontalAlignment="Left" Margin="371,292,0,0" VerticalAlignment="Top"/>
+        <DatePicker Name="bestillingsdatoTB" HorizontalAlignment="Left" Margin="348,183,0,0" VerticalAlignment="Top"/>
+        <DatePicker Name="leveringsdatoTB" HorizontalAlignment="Left" Margin="348,239,0,0" VerticalAlignment="Top"/>
+        <Label Content="Bestillingsdato" HorizontalAlignment="Left" Margin="242,183,0,0" VerticalAlignment="Top"/>
+        <Label Content="Leveringsdato" HorizontalAlignment="Left" Margin="242,237,0,0" VerticalAlignment="Top"/>
+        <Button Name="opret" Content="Opret" HorizontalAlignment="Left" Margin="491,351,0,0" VerticalAlignment="Top" Width="133" Height="31" Click="Opret_Click"/>
+        <Label Content="Navn" HorizontalAlignment="Left" Margin="288,135,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="nameTB" HorizontalAlignment="Left" Height="23" Margin="348,135,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Ordre ID" HorizontalAlignment="Left" Margin="271,93,0,0" VerticalAlignment="Top" Width="78"/>
+        <TextBox Name="ordreIDTB" HorizontalAlignment="Left" Height="23" Margin="348,96,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>

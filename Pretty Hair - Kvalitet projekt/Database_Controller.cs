@@ -73,31 +73,31 @@ namespace Pretty_Hair___Kvalitet_projekt
                 }
             }
         }
-        //public void InsertOrder(Customer customer)
-        //{
-        //    using (SqlConnection conn = new SqlConnection(connectionString))
-        //    {
-        //        try
-        //        {
-        //            conn.Open();
+        public void InsertOrder(Order order)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
 
-        //            SqlCommand cmd1 = new SqlCommand("InsertKundeInfo", conn);
-        //            cmd1.CommandType = CommandType.StoredProcedure;
+                    SqlCommand cmd1 = new SqlCommand("IndsætOrdreInfo", conn);
+                    cmd1.CommandType = CommandType.StoredProcedure;
 
-        //            cmd1.Parameters.Add(new SqlParameter("@Navn", customer.Name));
-        //            cmd1.Parameters.Add(new SqlParameter("@Adresse", customer.Address));
-        //            cmd1.Parameters.Add(new SqlParameter("@PostNr", customer.Zip));
-        //            cmd1.Parameters.Add(new SqlParameter("@Bydel", customer.Town));
-        //            cmd1.Parameters.Add(new SqlParameter("@Telefonnummer", customer.PhoneNum));
+                    cmd1.Parameters.Add(new SqlParameter("@Ordre ID", order.OrdreID));
+                    cmd1.Parameters.Add(new SqlParameter("@Navn", order.Navn));
+                    cmd1.Parameters.Add(new SqlParameter("@Bestillingsdato", order.Bestillingsdato));
+                    cmd1.Parameters.Add(new SqlParameter("@Leveringsdato", order.Leveringsdato));
+                    cmd1.Parameters.Add(new SqlParameter("@Hentet", order.Checkbox));
+                    
+                    cmd1.ExecuteNonQuery();
+                }
 
-        //            cmd1.ExecuteNonQuery();
-        //        }
-
-        //        catch (SqlException e)
-        //        {
-        //            Console.WriteLine("Hovsa: " + e.Message);
-        //        }
-        //    }
-        //}
+                catch (SqlException e)
+                {
+                    Console.WriteLine("Hovsa: " + e.Message);
+                }
+            }
+        }
     }
 }
