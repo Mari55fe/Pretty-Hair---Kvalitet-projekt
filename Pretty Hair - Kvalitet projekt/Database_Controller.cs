@@ -73,5 +73,31 @@ namespace Pretty_Hair___Kvalitet_projekt
                 }
             }
         }
+        //public void InsertOrder(Customer customer)
+        //{
+        //    using (SqlConnection conn = new SqlConnection(connectionString))
+        //    {
+        //        try
+        //        {
+        //            conn.Open();
+
+        //            SqlCommand cmd1 = new SqlCommand("InsertKundeInfo", conn);
+        //            cmd1.CommandType = CommandType.StoredProcedure;
+
+        //            cmd1.Parameters.Add(new SqlParameter("@Navn", customer.Name));
+        //            cmd1.Parameters.Add(new SqlParameter("@Adresse", customer.Address));
+        //            cmd1.Parameters.Add(new SqlParameter("@PostNr", customer.Zip));
+        //            cmd1.Parameters.Add(new SqlParameter("@Bydel", customer.Town));
+        //            cmd1.Parameters.Add(new SqlParameter("@Telefonnummer", customer.PhoneNum));
+
+        //            cmd1.ExecuteNonQuery();
+        //        }
+
+        //        catch (SqlException e)
+        //        {
+        //            Console.WriteLine("Hovsa: " + e.Message);
+        //        }
+        //    }
+        //}
     }
 }

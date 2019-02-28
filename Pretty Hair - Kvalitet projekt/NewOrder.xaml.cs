@@ -33,6 +33,7 @@ namespace Pretty_Hair___Kvalitet_projekt
 
         private void Opret_Click(object sender, RoutedEventArgs e)
         {
+            Controller controller = new Controller();
 
         }
     }
